@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import {
-  cpSync,
   existsSync,
   linkSync,
   lstatSync,
@@ -10,6 +9,7 @@ import {
   readdirSync,
   readFileSync,
   realpathSync,
+  renameSync,
   rmSync,
   symlinkSync,
   writeFileSync,
@@ -288,8 +288,11 @@ test('global and project installations are independent', (t) => {
 test('project references remain relative after moving checkout', (t) => {
   const o = fixture(t);
   run('init', o);
-  const moved = path.join(o.root, 'moved');
-  cpSync(o.project, moved, { recursive: true });
+  // Avoid the Windows Node 22 Unicode cpSync crash: nodejs/node#59636.
+  // Both directories are siblings under the fixture root, so the move stays on one volume.
+  const moved = path.join(o.root, 'moved space é');
+  renameSync(o.project, moved);
+  assert.ok(!existsSync(o.project));
   const relocated = { ...o, project: moved };
   run('doctor', relocated);
   for (const key of ['codex-instructions', `claude-skill/${skills[0]}`, 'framework/AGENTS.md']) {
