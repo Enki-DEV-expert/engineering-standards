@@ -6,7 +6,7 @@ A portable engineering standards framework for **Claude Code** and **OpenAI Code
 
 It gives AI coding agents a consistent way to inspect architecture, protect existing behavior, assess security and privacy, preserve data integrity, reason about cost, and verify their work with evidence. The standards and six engineering skills were previously exercised in the maintainer's Claude Code and Codex sessions. The new installer has a separate validation status described below.
 
-**Release status:** local release preparation, version 0.1.0. This package has not been published by this project. The npm name below is proposed and its ownership/availability must be confirmed before publication.
+**Release status:** version 0.1.0 is available as a [GitHub pre-release](https://github.com/Enki-DEV-expert/engineering-standards/releases/tag/v0.1.0). The npm package has not been published yet; install from a clone as shown below. The npm name below is proposed and its ownership/availability must be confirmed before publication.
 
 ## Why use it?
 
