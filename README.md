@@ -1,5 +1,7 @@
 # Global Engineering Standards
 
+[![CI](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml/badge.svg)](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](CHANGELOG.md)
+
 A portable engineering standards framework for **Claude Code** and **OpenAI Codex**, authored by **Nirox Morais** and maintained on GitHub by **Enki-DEV-expert**.
 
 It gives AI coding agents a consistent way to inspect architecture, protect existing behavior, assess security and privacy, preserve data integrity, reason about cost, and verify their work with evidence. The standards and six engineering skills were previously exercised in the maintainer's Claude Code and Codex sessions. The new installer has a separate validation status described below.
@@ -34,6 +36,13 @@ The six skills cover safe implementation, security, privacy, architecture, datab
 Agent accounts, subscriptions, sandbox permissions and corporate policies remain separate requirements. Cloud sessions, remote workspaces and desktop account-synced skills are not automatically configured.
 
 ## Install from this checkout today
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/Enki-DEV-expert/engineering-standards.git
+cd engineering-standards
+```
 
 Build the CLI in a reviewed checkout:
 
@@ -142,7 +151,7 @@ npm run check
 
 Tests create temporary homes and projects; they must never target real agent configuration. CI runs build, lint, types, tests and content validation. Release automation is manual and disabled until explicitly enabled by the maintainer.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md). Report vulnerabilities privately through the repository's Security tab once private reporting is enabled. Do not post credentials or exploit details in public issues. The private contact channel remains a maintainer setup requirement.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md). Report vulnerabilities privately through the repository's Security tab ([open a private report](https://github.com/Enki-DEV-expert/engineering-standards/security/advisories/new)). Do not post credentials or exploit details in public issues.
 
 ## Authorship and license
 
