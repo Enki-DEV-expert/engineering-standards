@@ -16,10 +16,12 @@ import {
 } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { test } from 'node:test';
+import { beforeEach, test } from 'node:test';
 import { contentFiles, digest, packageRoot, readContent, render, skills } from '../dist/content.js';
 import { run } from '../dist/installer.js';
 import { layout } from '../dist/layout.js';
+
+beforeEach((t) => process.stderr.write(`START: ${t.name}\n`));
 
 function fixture(t, overrides = {}) {
   const root = realpathSync(mkdtempSync(path.join(os.tmpdir(), 'ges-test-')));

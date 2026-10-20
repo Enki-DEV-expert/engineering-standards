@@ -26,5 +26,10 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Diagnose installer crash
+        if: runner.os == 'Windows' && matrix.node == 22
+        run: |
+          npm run build
+          node --test --test-reporter=spec --test-concurrency=1 tests/installer.test.mjs
       - run: npm run check
       - run: npm run package:check
