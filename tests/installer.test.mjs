@@ -289,17 +289,22 @@ test('global and project installations are independent', (t) => {
 });
 test('project references remain relative after moving checkout', (t) => {
   const o = fixture(t);
+  process.stderr.write('MOVE: init\n');
   run('init', o);
   const moved = path.join(o.root, 'moved');
+  process.stderr.write('MOVE: cpSync\n');
   cpSync(o.project, moved, { recursive: true });
   const relocated = { ...o, project: moved };
+  process.stderr.write('MOVE: doctor\n');
   run('doctor', relocated);
   for (const key of ['codex-instructions', `claude-skill/${skills[0]}`, 'framework/AGENTS.md']) {
     const value = readFileSync(target(relocated, key), 'utf8');
     assert.ok(!value.includes(o.project));
     assert.ok(!value.includes('~/engineering-standards/'));
   }
+  process.stderr.write('MOVE: uninstall\n');
   run('uninstall', relocated);
+  process.stderr.write('MOVE: done\n');
 });
 test('Windows and POSIX layout uses correct roots and separators', () => {
   const win = layout(
