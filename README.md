@@ -1,12 +1,12 @@
 # Global Engineering Standards
 
-[![CI](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml/badge.svg)](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](CHANGELOG.md)
+[![CI](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml/badge.svg)](https://github.com/Enki-DEV-expert/engineering-standards/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![npm](https://img.shields.io/npm/v/@enki-dev-expert/global-engineering-standards.svg)](https://www.npmjs.com/package/@enki-dev-expert/global-engineering-standards)
 
 A portable engineering standards framework for **Claude Code** and **OpenAI Codex**, authored by **Nirox Morais** and maintained on GitHub by **Enki-DEV-expert**.
 
 It gives AI coding agents a consistent way to inspect architecture, protect existing behavior, assess security and privacy, preserve data integrity, reason about cost, and verify their work with evidence. The standards and six engineering skills were previously exercised in the maintainer's Claude Code and Codex sessions. The new installer has a separate validation status described below.
 
-**Release status:** version 0.1.0 is available as a [GitHub pre-release](https://github.com/Enki-DEV-expert/engineering-standards/releases/tag/v0.1.0). The npm package has not been published yet; install from a clone as shown below. The npm name below is proposed and its ownership/availability must be confirmed before publication.
+**Release status:** version 0.1.1 is published on [npm](https://www.npmjs.com/package/@enki-dev-expert/global-engineering-standards), built and published from this repository by the reviewed GitHub Actions release workflow. See the [releases](https://github.com/Enki-DEV-expert/engineering-standards/releases) and the [changelog](CHANGELOG.md).
 
 ## Why use it?
 
@@ -69,12 +69,12 @@ node /path/to/reviewed-checkout/dist/cli.js init-project
 
 On Windows, use the equivalent quoted path to the checkout. Paths with spaces should be quoted on every platform.
 
-### One-command installation after publication
+### One-command installation from npm
 
 **Not available from this project until the maintainer publishes and confirms the package name.** The intended command, pinned to a reviewed version, is:
 
 ```sh
-npx --yes @enki-dev-expert/global-engineering-standards@0.1.0 init --global
+npx --yes @enki-dev-expert/global-engineering-standards@0.1.1 init --global
 ```
 
 `npx` downloads code from npm, so review the package and provenance before trusting it. The installer itself is offline. Prefer a reviewed pinned version over `latest`.

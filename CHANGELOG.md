@@ -4,6 +4,11 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-10-20
+
+- Publish the package to npm as `@enki-dev-expert/global-engineering-standards`, with provenance, from the reviewed GitHub Actions release workflow.
+- Document npm installation in the README and add an npm version badge.
+
 ## [0.1.0] — 2026-10-20
 
 - Preserve the existing central policy, twelve domain standards, six engineering skills and four templates.

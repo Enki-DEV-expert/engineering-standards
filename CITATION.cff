@@ -7,12 +7,12 @@ authors:
     given-names: "Nirox"
     alias: "Enki-DEV-expert"
     website: "https://www.linkedin.com/in/nirox-morais-87784b1ba/"
-version: "0.1.0"
+version: "0.1.1"
 license: MIT
 repository-code: "https://github.com/Enki-DEV-expert/engineering-standards"
 abstract: >-
   A portable engineering policy, domain documentation and specialized skills
-  framework for Claude Code and OpenAI Codex. Version 0.1.0 is unreleased.
+  framework for Claude Code and OpenAI Codex. Version 0.1.1 is published on npm.
 keywords:
   - engineering standards
   - AI coding agents

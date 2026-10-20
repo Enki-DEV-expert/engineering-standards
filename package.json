@@ -1,6 +1,6 @@
 {
   "name": "@enki-dev-expert/global-engineering-standards",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Portable engineering policies and skills for Claude Code and OpenAI Codex",
   "type": "module",
   "bin": {

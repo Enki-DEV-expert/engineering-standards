@@ -2,7 +2,7 @@
 
 ## Supported status
 
-Version 0.1.0 is a GitHub pre-release. There is no support guarantee or incident-response SLA. The maintainer prioritizes confirmed vulnerabilities affecting the latest release; older versions may require an upgrade.
+Version 0.1.1 is the latest release, published on npm. There is no support guarantee or incident-response SLA. The maintainer prioritizes confirmed vulnerabilities affecting the latest release; older versions may require an upgrade.
 
 ## Private reporting
 

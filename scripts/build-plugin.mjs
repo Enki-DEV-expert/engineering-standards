@@ -19,7 +19,7 @@ writeFileSync(
   `${JSON.stringify(
     {
       name: 'global-engineering-standards',
-      version: '0.1.0',
+      version: '0.1.1',
       description:
         'Six engineering review and implementation skills. Install policy through the standalone CLI.',
       author: {
@@ -47,7 +47,7 @@ writeFileSync(
           name: 'global-engineering-standards',
           source: './dist/claude-plugin',
           description: 'Engineering standards skills',
-          version: '0.1.0',
+          version: '0.1.1',
         },
       ],
     },
