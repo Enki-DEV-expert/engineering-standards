@@ -1,0 +1,67 @@
+{
+  "name": "@enki-dev-expert/global-engineering-standards",
+  "version": "0.1.0",
+  "description": "Portable engineering policies and skills for Claude Code and OpenAI Codex",
+  "type": "module",
+  "bin": {
+    "engineering-standards": "dist/cli.js"
+  },
+  "files": [
+    "dist/*.js",
+    "AGENTS.md",
+    "docs/",
+    "skills/",
+    "templates/",
+    "scripts/content-baseline.json",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "handbook/",
+    "src/*.ts",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "CITATION.cff"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "author": {
+    "name": "Nirox Morais",
+    "url": "https://www.linkedin.com/in/nirox-morais-87784b1ba/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "engineering",
+    "agent-skills"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/build-plugin.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src tests scripts package.json tsconfig.json biome.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run lint && npm run typecheck && npm test && npm run validate",
+    "prepack": "npm run build && npm run validate",
+    "package:check": "node scripts/package-check.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "22.20.5",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enki-DEV-expert/engineering-standards.git"
+  },
+  "homepage": "https://github.com/Enki-DEV-expert/engineering-standards#readme",
+  "bugs": {
+    "url": "https://github.com/Enki-DEV-expert/engineering-standards/issues"
+  }
+}

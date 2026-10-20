@@ -1,0 +1,17 @@
+{
+  "name": "enki-engineering-standards",
+  "metadata": {
+    "description": "Six engineering implementation and review skills for Claude Code."
+  },
+  "owner": {
+    "name": "Enki-DEV-expert"
+  },
+  "plugins": [
+    {
+      "name": "global-engineering-standards",
+      "source": "./dist/claude-plugin",
+      "description": "Engineering standards skills",
+      "version": "0.1.0"
+    }
+  ]
+}

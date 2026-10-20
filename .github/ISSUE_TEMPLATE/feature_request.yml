@@ -1,0 +1,19 @@
+name: Feature or standards proposal
+description: Propose an improvement with evidence and compatibility considerations.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution and alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Security, privacy, compatibility and operational cost implications

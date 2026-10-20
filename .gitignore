@@ -1,0 +1,38 @@
+# Local backups
+*.backup
+*.backup-*
+*.bak
+*.orig
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+
+# Operating system and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Node.js
+node_modules/
+.npm/
+coverage/
+dist/
+
+# Logs and temporary files
+*.log
+.tmp/
+backups/
+
+# Distribution artifacts and private installer recovery state
+*.tgz
+*.sha256
+.engineering-standards/transactions/
+.engineering-standards/operation.lock

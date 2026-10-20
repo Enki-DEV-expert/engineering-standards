@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it using this metadata."
+title: "Global Engineering Standards"
+type: software
+authors:
+  - family-names: "Morais"
+    given-names: "Nirox"
+    alias: "Enki-DEV-expert"
+    website: "https://www.linkedin.com/in/nirox-morais-87784b1ba/"
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/Enki-DEV-expert/engineering-standards"
+abstract: >-
+  A portable engineering policy, domain documentation and specialized skills
+  framework for Claude Code and OpenAI Codex. Version 0.1.0 is unreleased.
+keywords:
+  - engineering standards
+  - AI coding agents
+  - security
+  - software architecture
+# Maintainer: add the confirmed repository-code URL and date-released on publication.
