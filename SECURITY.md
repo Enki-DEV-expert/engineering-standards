@@ -8,9 +8,9 @@ Version 0.1.0 is in local release preparation. There is no released support guar
 
 Author and security contact: **Nirox Morais** ([LinkedIn](https://www.linkedin.com/in/nirox-morais-87784b1ba/)); GitHub account and project maintainer: **Enki-DEV-expert**.
 
-Use **Security → Report a vulnerability** on the canonical GitHub repository after the maintainer has enabled private vulnerability reporting. Do not open a public issue with exploit details, credentials or personal data.
+Private vulnerability reporting is enabled. Report vulnerabilities through **Security → Report a vulnerability** on the canonical GitHub repository ([open a private report](https://github.com/Enki-DEV-expert/engineering-standards/security/advisories/new)). Do not open a public issue with exploit details, credentials or personal data.
 
-**Maintainer setup placeholder:** configure and verify a private security reporting channel before public launch. No private email address or response address has been supplied. The LinkedIn profile is not a secure vulnerability-reporting channel; use it only to request a private channel without including vulnerability details. If private reporting is unavailable, retain the sensitive details and request a private reporting channel without including those details. Do not assume public issues or a GitHub profile provide confidentiality.
+Reports are received privately by the maintainer through GitHub. The LinkedIn profile is not a secure vulnerability-reporting channel: never send vulnerability details there. Public issues and GitHub profiles do not provide confidentiality.
 
 Include affected version, operating system, minimal reproduction in a temporary directory, expected/actual behavior, impact and suggested mitigation. Use synthetic data. Do not test against other people's installations or services.
 

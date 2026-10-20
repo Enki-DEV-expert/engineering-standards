@@ -151,7 +151,7 @@ npm run check
 
 Tests create temporary homes and projects; they must never target real agent configuration. CI runs build, lint, types, tests and content validation. Release automation is manual and disabled until explicitly enabled by the maintainer.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md). Report vulnerabilities privately through the repository's Security tab once private reporting is enabled. Do not post credentials or exploit details in public issues. The private contact channel remains a maintainer setup requirement.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md). Report vulnerabilities privately through the repository's Security tab ([open a private report](https://github.com/Enki-DEV-expert/engineering-standards/security/advisories/new)). Do not post credentials or exploit details in public issues.
 
 ## Authorship and license
 
